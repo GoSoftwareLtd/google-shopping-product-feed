@@ -90,6 +90,6 @@ class Node
 			$this->value = "<![CDATA[{$this->value}]]>";
 		}
 		
-         $parent->addChild('g:'.$this->name, $this->value, $this->_namespace);
+         $parent->{'g:'.$this->name} = $this->value;
 	}
 }
