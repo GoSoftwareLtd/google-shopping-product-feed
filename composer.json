@@ -1,7 +1,7 @@
 {
-  "name": "ninthyard/google-shopping-product-feed",
+  "name": "GoSoftwareLtd/google-shopping-product-feed",
   "description": "Google Shopping Product Feed for PHP",
-  "homepage": "https://github.com/NinthYard/google-shopping-product-feed",
+  "homepage": "https://github.com/GoSoftwareLtd/google-shopping-product-feed",
   "license": "GPLv3",
   "keywords": [
     "Google",
