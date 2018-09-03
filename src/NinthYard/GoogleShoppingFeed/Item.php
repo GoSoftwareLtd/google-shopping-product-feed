@@ -102,7 +102,7 @@ class Item
 	{
 		$node = new Node('link');
 		$link = $this->safeCharEncodeURL($link);
-		$this->nodes['link'] = $node->value($link)->addCdata();
+		$this->nodes['link'] = $node->value($link);
 	}
 
 	/**
@@ -164,7 +164,7 @@ class Item
 	public function condition($condition = 'new')
 	{
 		$node = new Node('condition');
-		$this->nodes['condition'] = $node->value($condition)->_namespace($this->namespace)->addCdata();
+		$this->nodes['condition'] = $node->value($condition)->_namespace($this->namespace);
 	}
 
 	/**
@@ -187,7 +187,7 @@ class Item
 	{
 		$node = new Node('image_link');
 		$image_link = $this->safeCharEncodeURL($image_link);
-		$this->nodes['image_link'] = $node->value($image_link)->_namespace($this->namespace)->addCdata();
+		$this->nodes['image_link'] = $node->value($image_link)->_namespace($this->namespace);
 	}
 
 	/**
@@ -211,7 +211,7 @@ class Item
 	{
 		$node = new Node('brand');
 		$brand = $this->safeCharEncodeText($brand);
-		$this->nodes['brand'] = $node->value($brand)->_namespace($this->namespace)->addCdata();
+		$this->nodes['brand'] = $node->value($brand)->_namespace($this->namespace);
 	}
 
 	/**
@@ -222,7 +222,7 @@ class Item
 	public function mpn($mpn)
 	{
 		$node = new Node('mpn');
-		$this->nodes['mpn'] = $node->value($mpn)->_namespace($this->namespace)->addCdata();
+		$this->nodes['mpn'] = $node->value($mpn)->_namespace($this->namespace);
 	}
 
 	/**
@@ -256,7 +256,7 @@ class Item
 	public function google_product_category($google_product_category)
 	{
 		$node = new Node('google_product_category');
-		$this->nodes['google_product_category'] = $node->value($google_product_category)->_namespace($this->namespace)->addCdata();
+		$this->nodes['google_product_category'] = $node->value($google_product_category)->_namespace($this->namespace);
 	}
 
 	/**
